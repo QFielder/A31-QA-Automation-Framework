@@ -9,7 +9,18 @@ public class LoginTests extends BaseTest {
     @Test(dataProvider = "incorrectLoginProviders", dataProviderClass = BaseTest.class)
     public static void loginEmptyEmailPasswordTest (String email, String password) {
 
+<<<<<<< Updated upstream
         login(email, password);
+=======
+    @Test
+    public void testName() {
+    }
+
+    @Test(enabled = true, priority = 0, description = "LoginEmptyEmailPasswordTest")
+    public static void loginEmptyEmailPasswordTest () {
+
+        navigateToPage();
+>>>>>>> Stashed changes
         Assert.assertEquals(driver.getCurrentUrl(), url);
     }
 
